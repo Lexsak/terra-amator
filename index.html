@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraAmator</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="header-title">
+            <span>Terra</span>
+            <span>Amator</span>
+            <img src="./images/logo.png" alt="logo">
+        </h1>
+        <!-- search bar -->
+        <div class="search-bar">
+            <input type="text" class="search-bar-input" name="search-bar" id="search-bar"
+                placeholder="Wyszukaj w sklepie...">
+            <label for="search-bar">
+                <div class="search-bar-icon">
+                    <img src="./images/lupa.svg" alt="search-icon">
+                </div>
+            </label>
+        </div>
+        <!-- cart -->
+        <div class="header-basket">
+            <img src="./images/shopping_cart.png" alt="shopping_cart" class="sidebar-toggle">
+            <p class="basket-amount">Koszyk</p>
+            <button class="basket-clear-btn">x</button>
+        </div>
+        <!-- cart popup -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <p>Cena całkowita: <span class="basket-amount-sidebar"> 0.00 zł</span></p>
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="basket-products"></div>
+        </aside>
+    </header>
+
+    <!-- categories and product container -->
+    <main class="container">
+        <aside class="categories">
+            <h1 class="categories-title">Kategorie</h1>
+            <section class="categories-items">
+                <!-- main.js, creates classes automatically, renderCategories() -->
+            </section>
+        </aside>
+        <section class="products">
+            <!-- main.js, creates products automatically, renderProducts() -->
+        </section>
+        <p class="empty-state">
+            Nie znaleziono pasującego produktu...
+        </p>
+    </main>
+
+
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
